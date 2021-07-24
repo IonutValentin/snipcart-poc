@@ -5,13 +5,14 @@ title: Hello World
 
 <h1>Proof of concept</h1>
 
-
-
-<button class="snipcart-add-item"
-  data-item-id="starry-night"
-  data-item-price="79.99"
-  data-item-url="/"
-  data-item-description="High-quality replica of The Starry Night by the Dutch post-impressionist painter Vincent van Gogh."
-  data-item-name="The Starry Night">
-  Add to cart
-</button>
+<script>
+ let btn = document.createElement('button');
+ btn.classList.add('snipcart-add-item');
+ btn.dataset.itemId = 'Ciocan';
+ btn.dataset.itemPrice= '7.50';
+ btn.dataset.itemUrl = '/';
+ btn.dataset.itemName = "Ciocanul Negru";
+ btn.textContent = "Add to cart";
+ 
+ document.querySelector('body').appendChild(btn);
+</script>
