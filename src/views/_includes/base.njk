@@ -5,6 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>{{ title }}</title>
 	<link rel="stylesheet" href="{{ '/css/main.css' | url }}" />
+	<link rel="preconnect" href="https://app.snipcart.com">
+  <link rel="preconnect" href="https://cdn.snipcart.com">
+  <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.css" />
 </head>
 <body>
 	<header>
@@ -14,5 +17,7 @@
 	{{ content | safe }}
 	</main>
 	<script src="{{ '/js/main.js' | url }}"></script>
+	<script async src="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.js"></script>
+  <div hidden id="snipcart" data-api-key="YOUR_PUBLIC_API_KEY"></div>
 </body>
 </html>
