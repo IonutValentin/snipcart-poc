@@ -1,5 +1,7 @@
 const htmlmin = require("html-minifier");
 const pluginESbuild = require("@jamshop/eleventy-plugin-esbuild");
+const dotenv = require('dotenv');
+dotenv.config();
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget("./src/assets/sass");

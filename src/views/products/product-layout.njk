@@ -1,0 +1,15 @@
+---
+layout: base.njk
+pagination:
+  data: productData.myData
+  size: 1
+  alias: product
+permalink: "products/{{ product.name | slug }}/index.html"
+---
+
+<ol>
+{%- for item in pagination.items %}
+  <li>{{ item.name }}</li>
+  <li>{{ item.desc }}</li>
+{% endfor -%}
+</ol>
